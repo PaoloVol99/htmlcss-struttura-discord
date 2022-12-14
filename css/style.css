@@ -18,13 +18,26 @@ img {
     margin: 0 auto;
 }
 
+.container-2 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 .debug header{
     min-height: 70px;
     background-color: lightblue;
 }
 
 .debug .container {
-    padding: 20px;
+    padding: 20px 0;
+}
+
+.debug .container-2 {
+    padding: 30px 0;
+}
+
+.section-first {
+    background-color: navy;
 }
 
 .row {
@@ -48,4 +61,9 @@ img {
 
 .row-cols-3 > .col-login {
     text-align: right;
+}
+
+.col-pink {
+    background-color: violet;
+    min-height: 400px;
 }
