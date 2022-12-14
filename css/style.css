@@ -117,16 +117,16 @@ img {
 }
 
 .debug .row-cols-2 {
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .debug .row-cols-5 {
-    min-height: 700px;
+    min-height: 600px;
 }
 
 .debug .row-cols-5 .col {
     border: 2px dashed white;
-    background-color: aquamarine;
+    background-color: rgb(0, 172, 115);
 }
 
 .debug .row-cols-5 .col-2x {
