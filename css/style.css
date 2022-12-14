@@ -13,7 +13,10 @@ img {
     max-width: 100%;
 }
 
-.container, .container-header {
+.container, 
+.container-header,
+.container-footer,
+.container-footer-2 {
     max-width: 900px;
     margin: 0 auto;
 }
@@ -24,8 +27,11 @@ img {
 }
 
 .debug header{
-    min-height: 70px;
     background-color: lightblue;
+}
+
+.debug footer {
+    background-color: rgb(24, 24, 24);
 }
 
 .debug .container {
@@ -34,6 +40,11 @@ img {
 
 .debug .container-header {
     padding: 20px 0;
+    min-height: 70px;
+}
+
+.debug .container-footer {
+    padding: 5px 0 30px;
 }
 
 .debug .container-2 {
@@ -71,9 +82,14 @@ img {
     text-align: right;
 }
 
-.col-pink {
+.debug .col-pink {
     background-color: violet;
     min-height: 400px;
+}
+
+.debug .col-green {
+    background-color: green;
+    min-height: 800px;
 }
 
 .debug .col-60 {
@@ -100,7 +116,47 @@ img {
     background-color: lightgrey;
 }
 
-.row-cols-2 {
+.debug .row-cols-2 {
     min-height: 500px;
 }
 
+.debug .row-cols-5 {
+    min-height: 700px;
+}
+
+.debug .row-cols-5 .col {
+    border: 2px dashed white;
+    background-color: aquamarine;
+}
+
+.debug .row-cols-5 .col-2x {
+    border: 2px dashed black;
+    background-color: salmon;
+}
+
+.row-cols-5 .col {
+    flex-basis: calc(100% / 6);
+}
+
+.row-cols-5 .col-2x {
+    flex-basis: calc(100% / 3);
+}
+
+.debug .row-last {
+    min-height: 80px;
+    background-color: aqua;
+}
+
+.row-last {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.debug .row-last .col {
+    background-color: salmon;
+}
+
+.debug .container-footer-2 {
+    border-top: 1px solid white;
+    padding: 20px 0 0 0;
+}
