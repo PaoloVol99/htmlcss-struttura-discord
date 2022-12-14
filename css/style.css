@@ -13,7 +13,7 @@ img {
     max-width: 100%;
 }
 
-.container {
+.container, .container-header {
     max-width: 900px;
     margin: 0 auto;
 }
@@ -29,6 +29,10 @@ img {
 }
 
 .debug .container {
+    padding: 30px 0;
+}
+
+.debug .container-header {
     padding: 20px 0;
 }
 
@@ -42,6 +46,7 @@ img {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .debug [class^='col'] {
@@ -49,9 +54,12 @@ img {
     padding: 10px;
 }
 
+.debug .row-cols-3 > .col {
+    background-color: orange;
+}
+
 .row-cols-3 > .col {
     flex-basis: calc(100% / 5);
-    background-color: orange;
 }
 
 .row-cols-3 > .col-link {
@@ -67,3 +75,28 @@ img {
     background-color: violet;
     min-height: 400px;
 }
+
+.debug .col-60 {
+    background-color: cornflowerblue;
+}
+
+.debug .col-40 {
+    background-color: pink;
+}
+
+.row-cols-2-first .col-60 {
+    flex-basis: 60%;
+}
+
+.row-cols-2-first .col-40 {
+    flex-basis: 40%;
+}
+
+.debug .section-second {
+    background-color: white;
+}
+
+.row-cols-2-first {
+    min-height: 500px;
+}
+
